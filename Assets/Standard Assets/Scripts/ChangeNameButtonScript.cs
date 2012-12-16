@@ -36,6 +36,8 @@ public void OnMouseUp ()
 
 void OnGUI(){
 		if(guiOn){
+			GUI.BeginGroup(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 50, 100, 100));
+			
 			 if (Event.current.Equals(Event.KeyboardEvent("return"))) {
 				if(changeString.Length == 0)
 					changeString = PlayerPrefs.GetString(title);
@@ -68,10 +70,11 @@ PlayerPrefs.SetInt("TruckColor", 0);
 				GameObject.Find("Main Camera").GetComponent<MouseLook>().enabled = true;
 				guiOn = false;
 			}
-				
+			GUI.Box (new Rect(0,0,200,100), "Change " + title);
 			GUI.SetNextControlName("TextField");
-			changeString = GUI.TextField(new Rect(10,10,200,20),changeString, 32);
+			changeString = GUI.TextField(new Rect(5,5,190,20),changeString, 32);
 			GUI.FocusControl("TextField");
+			GUI.EndGroup();
 		}
 }
 }
