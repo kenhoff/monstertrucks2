@@ -2,46 +2,52 @@
 
 private var PointsTotal : float = 0;
 public var AirMultiplier : float = 1;
+public var MovesMultiplier : float = 1;
+public var SpeedMultiplier : float = 1;
+public var ResetMultiplier : float = 1;
 
 private var tracking : boolean;
-private var AngleTraveled : Vector3 = Vector3.zero;
 
 private var mask_out_player = ~(1 << 9);
 
 function Start () {
-
-	
-	Debug.Log(mask_out_player);
-
+	PointsTotal = 0;
 }
 
 function FixedUpdate () {
-	Debug.DrawRay(transform.position, -Vector3.up*3);
+	//Debug.DrawRay(transform.position, -Vector3.up*3);
 	var on_ground = Physics.Raycast(transform.position, -Vector3.up, 3, mask_out_player);
 	if (!on_ground) {
-		PointsTotal += AirMultiplier * Time.deltaTime;
-		if (tracking == false) StartTrackingTrick();
-		if (tracking == true) TrackTrick();
+		if (tracking == false) StartTrackingAir();
+		if (tracking == true) TrackAir();
 	}
 	if (on_ground && (tracking == true)) {
-		StopTrackingTrick();
+		StopTrackingAir();
 	}
-	//Debug.Log(PointsTotal);
+
+	// speed
+
+	PointsTotal += SpeedMultiplier * Time.deltaTime * rigidbody.velocity.magnitude;
+
+	Debug.Log(PointsTotal);
 }
 
-function StartTrackingTrick() {
-	AngleTraveled = Vector3.zero;
+function StartTrackingAir() {
 	tracking = true;
-	Debug.Log("Left Ground: Pitch: " + transform.eulerAngles.x + ", Roll: " + transform.eulerAngles.z + ", Heading: " + transform.eulerAngles.y);
 }
 
-function TrackTrick() {
-	AngleTraveled += rigidbody.angularVelocity * Time.deltaTime;
+function TrackAir() {
+	var hit : RaycastHit;
+	Physics.Raycast(transform.position, -Vector3.up, hit);
+	PointsTotal += AirMultiplier * Time.deltaTime * hit.distance;
+	PointsTotal += MovesMultiplier * Time.deltaTime * rigidbody.angularVelocity.magnitude;
 }
 
-function StopTrackingTrick() {
-	//Debug.Log(AngleTraveled);
-	Debug.Log("Hit Ground: Pitch: " + transform.eulerAngles.x + ", Roll: " + transform.eulerAngles.z + ", Heading: " + transform.eulerAngles.y);
-	AngleTraveled = Vector3.zero;
+function StopTrackingAir() {
 	tracking = false;
+}
+
+function EndLevel() {
+	PlayerPrefs.SetFloat("LastLevelPoints", PointsTotal);
+	PlayerPrefs.Save();
 }
