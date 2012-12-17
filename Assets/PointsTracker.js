@@ -4,7 +4,7 @@ private var PointsTotal : float = 0;
 public var AirMultiplier : float = 1;
 public var MovesMultiplier : float = 1;
 public var SpeedMultiplier : float = 1;
-public var ResetMultiplier : float = 1;
+public var ResetMultiplier : float = .05;
 
 private var tracking : boolean;
 
@@ -45,6 +45,10 @@ function TrackAir() {
 
 function StopTrackingAir() {
 	tracking = false;
+}
+
+function AddReset() {
+	PointsTotal -= PointsTotal * ResetMultiplier;
 }
 
 function EndLevel() {

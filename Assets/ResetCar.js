@@ -1,6 +1,9 @@
-#pragma strict
+//#pragma strict
+
+private var PointScript;
 
 function Start () {
+	PointScript = GetComponent("PointsTracker");
 }
 
 function Update () {
@@ -11,6 +14,7 @@ function Update () {
 		rigidbody.active = true;
 		rigidbody.velocity = rigidbody.velocity * 0;
 		rigidbody.angularVelocity = rigidbody.angularVelocity* 0;
+		PointScript.AddReset();
 	}
 	
 	// Debug.Log(Physics.Raycast(transform.position, down, 10));
