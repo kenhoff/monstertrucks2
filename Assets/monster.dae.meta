@@ -1,0 +1,405 @@
+fileFormatVersion: 2
+guid: 7e66a318ed0869641b3244107a230256
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Group1
+    100004: Group2
+    100006: Group3
+    100008: Group4
+    100010: Group5
+    100012: Group6
+    100014: Group7
+    100016: Group8
+    100018: Group_1
+    100020: Group_1 1
+    100022: Group_1 2
+    100024: Group_1 3
+    100026: Group_1 4
+    100028: Group_1 5
+    100030: Group_1 6
+    100032: Group_1 7
+    100034: Group_1 8
+    100036: Group_1 9
+    100038: Group_1_1
+    100040: Group_1_10
+    100042: Group_1_2
+    100044: Group_1_3
+    100046: Group_1_4
+    100048: Group_1_5
+    100050: Group_1_6
+    100052: Group_1_7
+    100054: Group_1_8
+    100056: Group_1_9
+    100058: Group_2
+    100060: Group_21
+    100062: Group_21 1
+    100064: Group_21_1
+    100066: Group_21_2
+    100068: Group_2_1
+    100070: Group_2_1_2
+    100072: Group_2_1_2 1
+    100074: Group_2_1_2 2
+    100076: Group_2_2
+    100078: Group_2_3
+    100080: Group_2_4
+    100082: Group_5_1
+    100084: Group_5_2
+    100086: mesh1
+    100088: mesh10
+    100090: mesh11
+    100092: mesh12
+    100094: mesh13
+    100096: mesh14
+    100098: mesh15
+    100100: mesh15 1
+    100102: mesh16
+    100104: mesh17
+    100106: mesh18
+    100108: mesh18 1
+    100110: mesh18 2
+    100112: mesh18 3
+    100114: mesh18 4
+    100116: mesh18 5
+    100118: mesh18 6
+    100120: mesh18 7
+    100122: mesh18 8
+    100124: mesh18 9
+    100126: mesh19
+    100128: mesh2
+    100130: mesh20
+    100132: mesh21
+    100134: mesh21 1
+    100136: mesh21 2
+    100138: mesh22
+    100140: mesh22 1
+    100142: mesh23
+    100144: mesh23 1
+    100146: mesh24
+    100148: mesh25
+    100150: mesh26
+    100152: mesh27
+    100154: mesh3
+    100156: mesh3 1
+    100158: mesh3 2
+    100160: mesh3 3
+    100162: mesh3 4
+    100164: mesh3 5
+    100166: mesh3 6
+    100168: mesh3 7
+    100170: mesh4
+    100172: mesh5
+    100174: mesh6
+    100176: mesh7
+    100178: mesh8
+    100180: mesh9
+    100182: Model
+    100184: //RootNode
+    100186: monster-wheel
+    100188: monster-wheel 1
+    100190: monster-wheel1
+    100192: monster-wheel12
+    100194: monster-wheel12 1
+    100196: monster-wheel2
+    100198: monster-wheel3
+    100200: monster-wheel4
+    100202: Roundlightfog
+    100204: Roundlightfog 1
+    100206: Roundlightfog 2
+    100208: Roundlightfog 3
+    100210: Roundlightfog 4
+    100212: Roundlightfog 5
+    100214: Roundlightfog 6
+    100216: Roundlightfog 7
+    100218: Roundlightfog1
+    100220: Roundlightfog2
+    100222: Roundlightfog3
+    100224: Roundlightfog4
+    100226: Roundlightfog5
+    100228: Roundlightfog6
+    100230: Roundlightfog7
+    100232: Roundlightfog8
+    100234: Rura
+    100236: Rura1
+    400000: Camera
+    400002: Group1
+    400004: Group2
+    400006: Group3
+    400008: Group4
+    400010: Group5
+    400012: Group6
+    400014: Group7
+    400016: Group8
+    400018: Group_1
+    400020: Group_1 1
+    400022: Group_1 2
+    400024: Group_1 3
+    400026: Group_1 4
+    400028: Group_1 5
+    400030: Group_1 6
+    400032: Group_1 7
+    400034: Group_1 8
+    400036: Group_1 9
+    400038: Group_1_1
+    400040: Group_1_10
+    400042: Group_1_2
+    400044: Group_1_3
+    400046: Group_1_4
+    400048: Group_1_5
+    400050: Group_1_6
+    400052: Group_1_7
+    400054: Group_1_8
+    400056: Group_1_9
+    400058: Group_2
+    400060: Group_21
+    400062: Group_21 1
+    400064: Group_21_1
+    400066: Group_21_2
+    400068: Group_2_1
+    400070: Group_2_1_2
+    400072: Group_2_1_2 1
+    400074: Group_2_1_2 2
+    400076: Group_2_2
+    400078: Group_2_3
+    400080: Group_2_4
+    400082: Group_5_1
+    400084: Group_5_2
+    400086: mesh1
+    400088: mesh10
+    400090: mesh11
+    400092: mesh12
+    400094: mesh13
+    400096: mesh14
+    400098: mesh15
+    400100: mesh15 1
+    400102: mesh16
+    400104: mesh17
+    400106: mesh18
+    400108: mesh18 1
+    400110: mesh18 2
+    400112: mesh18 3
+    400114: mesh18 4
+    400116: mesh18 5
+    400118: mesh18 6
+    400120: mesh18 7
+    400122: mesh18 8
+    400124: mesh18 9
+    400126: mesh19
+    400128: mesh2
+    400130: mesh20
+    400132: mesh21
+    400134: mesh21 1
+    400136: mesh21 2
+    400138: mesh22
+    400140: mesh22 1
+    400142: mesh23
+    400144: mesh23 1
+    400146: mesh24
+    400148: mesh25
+    400150: mesh26
+    400152: mesh27
+    400154: mesh3
+    400156: mesh3 1
+    400158: mesh3 2
+    400160: mesh3 3
+    400162: mesh3 4
+    400164: mesh3 5
+    400166: mesh3 6
+    400168: mesh3 7
+    400170: mesh4
+    400172: mesh5
+    400174: mesh6
+    400176: mesh7
+    400178: mesh8
+    400180: mesh9
+    400182: Model
+    400184: //RootNode
+    400186: monster-wheel
+    400188: monster-wheel 1
+    400190: monster-wheel1
+    400192: monster-wheel12
+    400194: monster-wheel12 1
+    400196: monster-wheel2
+    400198: monster-wheel3
+    400200: monster-wheel4
+    400202: Roundlightfog
+    400204: Roundlightfog 1
+    400206: Roundlightfog 2
+    400208: Roundlightfog 3
+    400210: Roundlightfog 4
+    400212: Roundlightfog 5
+    400214: Roundlightfog 6
+    400216: Roundlightfog 7
+    400218: Roundlightfog1
+    400220: Roundlightfog2
+    400222: Roundlightfog3
+    400224: Roundlightfog4
+    400226: Roundlightfog5
+    400228: Roundlightfog6
+    400230: Roundlightfog7
+    400232: Roundlightfog8
+    400234: Rura
+    400236: Rura1
+    2300000: mesh1
+    2300002: mesh10
+    2300004: mesh11
+    2300006: mesh12
+    2300008: mesh13
+    2300010: mesh14
+    2300012: mesh15
+    2300014: mesh15 1
+    2300016: mesh16
+    2300018: mesh17
+    2300020: mesh18
+    2300022: mesh18 1
+    2300024: mesh18 2
+    2300026: mesh18 3
+    2300028: mesh18 4
+    2300030: mesh18 5
+    2300032: mesh18 6
+    2300034: mesh18 7
+    2300036: mesh18 8
+    2300038: mesh18 9
+    2300040: mesh20
+    2300042: mesh21
+    2300044: mesh21 1
+    2300046: mesh21 2
+    2300048: mesh22
+    2300050: mesh22 1
+    2300052: mesh23
+    2300054: mesh23 1
+    2300056: mesh24
+    2300058: mesh25
+    2300060: mesh3
+    2300062: mesh3 1
+    2300064: mesh3 2
+    2300066: mesh3 3
+    2300068: mesh3 4
+    2300070: mesh3 5
+    2300072: mesh3 6
+    2300074: mesh3 7
+    2300076: mesh4
+    2300078: mesh5
+    2300080: mesh6
+    2300082: mesh7
+    2300084: mesh8
+    2300086: mesh9
+    3300000: mesh1
+    3300002: mesh10
+    3300004: mesh11
+    3300006: mesh12
+    3300008: mesh13
+    3300010: mesh14
+    3300012: mesh15
+    3300014: mesh15 1
+    3300016: mesh16
+    3300018: mesh17
+    3300020: mesh18
+    3300022: mesh18 1
+    3300024: mesh18 2
+    3300026: mesh18 3
+    3300028: mesh18 4
+    3300030: mesh18 5
+    3300032: mesh18 6
+    3300034: mesh18 7
+    3300036: mesh18 8
+    3300038: mesh18 9
+    3300040: mesh20
+    3300042: mesh21
+    3300044: mesh21 1
+    3300046: mesh21 2
+    3300048: mesh22
+    3300050: mesh22 1
+    3300052: mesh23
+    3300054: mesh23 1
+    3300056: mesh24
+    3300058: mesh25
+    3300060: mesh3
+    3300062: mesh3 1
+    3300064: mesh3 2
+    3300066: mesh3 3
+    3300068: mesh3 4
+    3300070: mesh3 5
+    3300072: mesh3 6
+    3300074: mesh3 7
+    3300076: mesh4
+    3300078: mesh5
+    3300080: mesh6
+    3300082: mesh7
+    3300084: mesh8
+    3300086: mesh9
+    4300000: mesh1
+    4300002: mesh3
+    4300004: mesh4
+    4300006: mesh5
+    4300008: mesh6
+    4300010: mesh7
+    4300012: mesh8
+    4300014: mesh9
+    4300016: mesh10
+    4300018: mesh11
+    4300020: mesh12
+    4300022: mesh13
+    4300024: mesh14
+    4300026: mesh15
+    4300028: mesh16
+    4300030: mesh17
+    4300032: mesh18
+    4300034: mesh20
+    4300036: mesh21
+    4300038: mesh22
+    4300040: mesh23
+    4300042: mesh24
+    4300044: mesh25
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 2
+  userData: 
